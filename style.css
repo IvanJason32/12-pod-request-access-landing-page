@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --verdePistache: #54E6AF;
+    --azul-oscuro: #121725;
+    --azul-medio-oscuro: #2C344B;
+    --blanco: #FFFFFF;
+    --gris-medio-oscuro: #5A668A;
+    --gris-claro: #C2CBE5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--azul-oscuro);
+}
+
+.container {
+    width: 1275px;
+    height: 640px;
+    /* border: 1px solid white; */
+    position: absolute;
+    right: 0%;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.section-logo {
+    width: 134.851px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: -28px;
+}
+
+.section-1 {
+    width: 723px;
+    height: 509px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    margin-top: 88px;
+    width: 665px;
+    color: var(--verdePistache);
+    font-family: Chivo;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 62px; /* 119.231% */
+    text-transform: uppercase;
+}
+.t-extra{
+    color: var(--blanco);
+}
+.content{
+    margin-top: 24px;
+    width: 445px;
+    color: var(--gris-claro);
+    font-family: Chivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+}
+.element-input-btn{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 427px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: var(--azul-medio-oscuro);
+    align-items: center;
+    justify-content: space-between;
+}
+.element-input-btn-mobile {
+    display: none;
+}
+.email-input{
+    height: 46px;
+    width: 210px;
+    margin-left: 32px;
+    color: var(--blanco);
+    font-family: Chivo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.email-input::placeholder {
+    color: var(--blanco);
+    opacity: 0.5;
+}
+.btn-input{
+    border: none;
+    width: 162px;
+    height: 46px;
+    border-radius: 28px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: var(--verdePistache);
+    color: var(--azul-oscuro);
+    font-family: Chivo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.20);
+}
+.btn-input:hover{
+    background: #B3FFE2;
+}
+.alert-input{
+    font-family: Chivo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 32px;
+    margin-top: 8px;
+    width: 275px;
+    height: 14px;
+    color: #FB3E3E;
+}
+.img-podcasts{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-spotify{
+    width: 96px;
+    height: 29px;
+}
+.img-applePodcast{
+    width: 78px;
+    height: 29px;
+    margin-left: 40px;
+}
+.img-googlePodcast{
+    width: 125px;
+    height: 18px;
+    margin-left: 41px;
+}
+.img-pocketCasts{
+    width: 129px;
+    height: 26px;
+    margin-left: 27px;
+}
+
+.section-2{
+    width: 888px;
+    height: 640px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.img-section2{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img-section2-tablet{
+    display: none;
+}
+.img-section2-mobile{
+    display: none;
+}
+.section-decoration{
+    width: 232px;
+    height: 104px;
+    position: absolute;
+    right: 0;
+    bottom: -52px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 729px;
+        height: 1024px;
+        top: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .section-logo {
+        left: 0px;
+        top: 50px;
+    }
+    
+    .section-1 {
+        width: 635px;
+        height: 509px;
+        top: 259px;
+    }
+    .titulo{
+        margin-top: 93px;
+        width: 635px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .content{
+        margin-top: 31px;
+    }
+    .img-podcasts{
+        margin-top: 42px;
+    }
+    
+    .section-2{
+        width: 491px;
+        height: 767px;
+    }
+    .img-section2{
+        display: none;
+    }
+    .img-section2-tablet{
+        display: block;
+    }
+    .section-decoration{
+        width: 232px;
+        height: 104px;
+        position: absolute;
+        left: 0;
+        right: 0px;
+    }   
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        /* border: 1px solid white; */
+        position: relative;
+        /* right: 0%; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .section-logo {
+        /* width: 134.851px;
+        height: 56px; */
+        position: static;
+        margin-top: 62px;
+        /* left: 0; */
+        /* top: -28px; */
+    }
+    
+    .section-1 {
+        width: 100vw;
+        height: 100vh;
+        position: static;
+        /* left: 0; */
+        /* bottom: 0; */
+        /* z-index: 1; */
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* border: 1px solid wheat; */
+        margin-top: 57px;
+    }
+    .titulo{
+        margin-top: 0px;
+        width: 327px;
+        /* color: var(--verdePistache); */
+        /* font-family: Chivo; */
+        font-size: 26px;
+        /* font-style: normal; */
+        /* font-weight: 300; */
+        line-height: 38px; /* 119.231% */
+        /* text-transform: uppercase; */
+        text-align: center;
+    }
+    /* .t-extra{
+        color: var(--blanco);
+    } */
+    .content{
+        margin-top: 16px;
+        width: 327px;
+        /* color: var(--gris-claro); */
+        /* font-family: Chivo; */
+        font-size: 15px;
+        /* font-style: normal; */
+        /* font-weight: 300; */
+        line-height: 25px;
+        text-align: center;
+    }
+    .element-input-btn{
+        display: none;
+    }
+    .element-input-btn-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        width: 327px;
+    }
+    .email-input{
+        height: 46px;
+        width: 327px;
+        margin-left: 0px;
+        color: var(--blanco);
+        /* font-family: Chivo; */
+        /* font-size: 14px; */
+        /* font-style: normal; */
+        /* font-weight: 400; */
+        /* line-height: 28px; */
+        background-color: var(--azul-medio-oscuro);
+        border-radius: 28px;
+        /* border: none; */
+        /* outline: none; */
+        padding: 0px 32px;
+    }
+    /* .email-input::placeholder {
+        color: var(--blanco);
+        opacity: 0.5;
+    } */
+    .btn-input{
+        margin-top: 16px;
+        /* border: none; */
+        width: 326px;
+        /* height: 46px; */
+        /* border-radius: 28px; */
+        margin-right: 0px;
+        /* cursor: pointer; */
+        /* background-color: var(--verdePistache); */
+        /* color: var(--azul-oscuro); */
+        /* font-family: Chivo; */
+        /* font-size: 14px; */
+        /* font-style: normal; */
+        /* font-weight: 400; */
+        /* line-height: 28px; */
+        /* box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.20); */
+    }
+    /* .btn-input:hover{
+        background: #B3FFE2;
+    } */
+    .img-podcasts{
+        margin-top: 33px;
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* align-items: center; */
+    }
+    
+    .img-spotify{
+        width: 56px;
+        height: 17px;
+    }
+    .img-applePodcast{
+        width: 45px;
+        height: 17px;
+        margin-left: 23px;
+    }
+    .img-googlePodcast{
+        width: 73px;
+        height: 11px;
+        margin-left: 25px;
+    }
+    .img-pocketCasts{
+        width: 77px;
+        height: 15px;
+        margin-left: 16px;
+    }
+    
+    .section-2{
+        display: none;
+        width: 888px;
+        height: 640px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .img-section2{
+        display: none;
+    }
+    .img-section2-tablet{
+        display: none;
+    }
+    .img-section2-mobile {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        mix-blend-mode:multiply;
+        opacity: 0.7993;
+        width: 100vw;
+        height: 100vh;
+    }
+    .section-decoration{
+        display: none;
+    }
+    
+}

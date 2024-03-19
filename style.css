@@ -311,42 +311,58 @@ body{
         margin-top: 48px;
         width: 327px;
     }
-    .email-input{
+    .email-input-mobile{
         height: 46px;
         width: 327px;
         margin-left: 0px;
         color: var(--blanco);
-        /* font-family: Chivo; */
-        /* font-size: 14px; */
-        /* font-style: normal; */
-        /* font-weight: 400; */
-        /* line-height: 28px; */
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
         background-color: var(--azul-medio-oscuro);
         border-radius: 28px;
-        /* border: none; */
-        /* outline: none; */
+        border: none;
+        outline: none;
         padding: 0px 32px;
     }
-    /* .email-input::placeholder {
+    .email-input-mobile::placeholder {
         color: var(--blanco);
         opacity: 0.5;
-    } */
-    .btn-input{
+    }
+    .btn-input-mobile{
         margin-top: 16px;
-        /* border: none; */
+        border: none;
         width: 326px;
-        /* height: 46px; */
-        /* border-radius: 28px; */
+        height: 46px;
+        border-radius: 28px;
         margin-right: 0px;
-        /* cursor: pointer; */
-        /* background-color: var(--verdePistache); */
-        /* color: var(--azul-oscuro); */
-        /* font-family: Chivo; */
-        /* font-size: 14px; */
-        /* font-style: normal; */
-        /* font-weight: 400; */
-        /* line-height: 28px; */
-        /* box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.20); */
+        cursor: pointer;
+        background-color: var(--verdePistache);
+        color: var(--azul-oscuro);
+        font-family: Chivo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.20);
+    }
+    .alert-input{
+        display: block;
+    }
+    .alert-input-mobile{
+        font-family: Chivo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 0px;
+        margin-top: 15px;
+        width: 326px;
+        height: 14px;
+        color: #FB3E3E;
+        text-align: center;
     }
     /* .btn-input:hover{
         background: #B3FFE2;
